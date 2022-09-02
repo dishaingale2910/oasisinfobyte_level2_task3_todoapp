@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&family=Hubballi&family=Permanent+Marker&family=Quicksand:wght@300&family=Rowdies:wght@300&display=swap");
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+body {
+	box-sizing: border-box;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	place-items: center;
+	margin: 0;
+	padding: 0;
+}
+header {
+	background-color: darkgreen;
+	box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+	color: white;
+	width: 100%;
+	top: 0;
+	margin: 0;
+	height: 100px;
+	display: flex;
+	place-items: center;
+	justify-content: center;
+	font-family: permanent marker;
+	font-size: 2em;
+}
+.container {
+	width: 100%;
+	margin: 0;
+	height: 100%;
+}
+#item1:checked ~ .groceryList {
+	height: 450px;
+}
+.groceryList {
+	height: 0px;
+	overflow: hidden;
+	margin-left: 30px;
+	transition: 0.4s;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 0px;
+}
+.groceryList label {
+	box-shadow: 0 0 0 #000 !important;
+	background-color: greenyellow;
+	overflow: hidden;
+	transition-delay: 0.3s;
+}
+main {
+	box-sizing: border-box;
+	width: 100%;
+	overflow: hidden;
+}
+main input[type="checkbox"] {
+	display: none;
+}
+main label::before {
+	content: ">";
+	margin-right: 15px;
+	margin-left: 15px;
+}
+main label {
+	margin-top: 10px;
+	display: flex;
+	place-items: center;
+	font-family: quicksand;
+	height: 60px;
+	width: 100%;
+	padding-left: 10px;
+	padding-right: -10px;
+	background-color: lightgreen;
+	font-size: 1.2em;
+	color: darkgreen;
+	font-weight: bold;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+	transition: 0.5s;
+}
+.groceryList input[type="checkbox"]:checked ~ label {
+}
+#item2:checked ~ label[for="item2"] {
+	text-decoration: line-through;
+}
+#item3:checked ~ label[for="item3"] {
+	text-decoration: line-through;
+}
+#item4:checked ~ label[for="item4"] {
+	text-decoration: line-through;
+}
+#item5:checked ~ label[for="item5"] {
+	text-decoration: line-through;
+}
+#item6:checked ~ label[for="item6"] {
+	text-decoration: line-through;
+}
+#bruh1:checked ~ label[for="bruh1"] {
+	text-decoration: line-through;
+	background-color: lightgreen;
+}
+#bruh2:checked ~ label[for="bruh2"] {
+	text-decoration: line-through;
+	background-color: lightgreen;
+}
+#bruh3:checked ~ label[for="bruh3"] {
+	text-decoration: line-through;
+	background-color: lightgreen;
+}
+#bruh4:checked ~ label[for="bruh4"] {
+	text-decoration: line-through;
+	background-color: lightgreen;
+}
+#bruh5:checked ~ label[for="bruh5"] {
+	text-decoration: line-through;
+	background-color: lightgreen;
+}
